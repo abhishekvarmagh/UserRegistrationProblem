@@ -20,4 +20,7 @@ namePattern="^([A-Z]{1}[A-Za-z]{2,})$"
 validateUserDetails "$firstName" $namePattern First_Name
 read -p "Enter your last name : " lastName
 validateUserDetails "$lastName" $namePattern Last_Name
+read -p "Enter your Email-Id : " email
+emailPattern="^([a-zA-Z]{3,}([-|+|_|.]?[a-zA-Z0-9]+)?[@][a-zA-Z0-9]+[.][a-zA-Z]{2,3}([.]?[a-zA-Z]{2,3})?)$"
+validateUserDetails "$email" $emailPattern Email
 
